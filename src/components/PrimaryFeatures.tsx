@@ -7,36 +7,41 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-features.jpg'
-import screenshotExpenses from '@/images/screenshots/expenses.png'
-import screenshotPayroll from '@/images/screenshots/payroll.png'
-import screenshotReporting from '@/images/screenshots/reporting.png'
+import screenshotCurriculum from '@/images/screenshots/curriculum.png'
+import screenshotCustomCourse from '@/images/screenshots/custom-course.png'
+import screenshotDashboard from '@/images/screenshots/dashboard.png'
 import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
 
 const features = [
   {
-    title: 'Payroll',
-    description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
-    image: screenshotPayroll,
+    title: 'Curriculum charts',
+    description: 'Build off of offical UCSC curriculum charts for your major.',
+    image: screenshotCurriculum,
   },
   {
-    title: 'Claim expenses',
+    title: 'Degree progress',
     description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
-    image: screenshotExpenses,
+      "Understand your progress towards your degree. We'll let you know if you're on track.",
+    image: screenshotDashboard,
   },
   {
-    title: 'VAT handling',
+    title: 'Customizable',
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
-    image: screenshotVatReturns,
+      'Transfer student? Going abroad? No problem. Add your own custom courses.',
+    image: screenshotCustomCourse,
   },
-  {
-    title: 'Reporting',
-    description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
-    image: screenshotReporting,
-  },
+  // {
+  //   title: 'Collaboration',
+  //   description:
+  //     'Share your plan with advisors and other students. Export to PDF or share your plan in app.',
+  //   image: screenshotDashboard,
+  // },
+  // {
+  //   title: 'Requirements',
+  //   description:
+  //     'Create successful plans that adhere to prequsite and major requirements.',
+  //   image: screenshotDashboard,
+  // },
 ]
 
 export function PrimaryFeatures() {
@@ -62,7 +67,7 @@ export function PrimaryFeatures() {
   return (
     <section
       id="features"
-      aria-label="Features for running your books"
+      aria-label="Features planning your degree"
       className="relative overflow-hidden bg-blue-600 pb-28 pt-20 sm:py-32"
     >
       <Image
@@ -76,11 +81,11 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to run your books.
+            Everything you need to plan your courses.
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Well everything you need if you aren’t that picky about minor
-            details like tax compliance.
+            We simplify the planning process by bringing all the elements into
+            one place.
           </p>
         </div>
         <Tab.Group
