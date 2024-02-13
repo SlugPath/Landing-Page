@@ -6,11 +6,11 @@ import { type Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - TaxPal',
-    default: 'TaxPal - Accounting made simple for small businesses',
+    template: '%s - Slug Path',
+    default: 'SlugPath - UCSC Course Planning Made Simple',
   },
   description:
-    'Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited.',
+    'Degree planning can be a pain. SlugPath makes it easy to plan your courses and graduate on time.',
 }
 
 const inter = Inter({
