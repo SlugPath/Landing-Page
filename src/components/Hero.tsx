@@ -31,7 +31,7 @@ export function Hero() {
         Undergraduate Degree planning can be a hassle. We make it easy.
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
-        <Button href="https://www.slugpath.com">Try it out now</Button>
+        <Button href="http://localhost:3000">Try it out now</Button>
         <Button
           href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           variant="outline"

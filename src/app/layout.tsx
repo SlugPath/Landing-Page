@@ -39,6 +39,7 @@ export default function RootLayout({
         lexend.variable,
       )}
     >
+      <link rel="icon" href="/favicon.svg" sizes="any" />
       <body className="flex h-full flex-col">{children}</body>
     </html>
   )
