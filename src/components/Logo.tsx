@@ -1,4 +1,4 @@
-export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
+export function Logo(props: React.ComponentPropsWithoutRef<"svg">) {
   return (
     <svg aria-hidden="true" viewBox="0 0 3484 1114" {...props}>
       <g>
@@ -27,7 +27,7 @@ export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
           Slug
         </tspan>
         <tspan x="886.86" y="0" font-family="Inter-Black, Inter">
-          {' '}
+          {" "}
         </tspan>
         <tspan
           x="973.43"
@@ -65,5 +65,5 @@ export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
         </tspan>
       </text>
     </svg>
-  )
+  );
 }

@@ -1,8 +1,8 @@
-import Link from 'next/link'
+import Link from "next/link";
 
-import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
-import { NavLink } from '@/components/NavLink'
+import { Container } from "@/components/Container";
+import { Logo } from "@/components/Logo";
+import { NavLink } from "@/components/NavLink";
 
 export function Footer() {
   return (
@@ -19,40 +19,29 @@ export function Footer() {
           </nav>
         </div>
         <div className="flex flex-col items-center border-t border-slate-400/10 py-10 sm:flex-row-reverse sm:justify-between">
-          <div className="flex gap-x-6">
-            {/* <Link href="#" className="group" aria-label="TaxPal on X">
-              <svg
-                className="h-6 w-6 fill-slate-500 group-hover:fill-slate-700"
-                aria-hidden="true"
-                viewBox="0 0 24 24"
-              >
-                <path d="M13.3174 10.7749L19.1457 4H17.7646L12.7039 9.88256L8.66193 4H4L10.1122 12.8955L4 20H5.38119L10.7254 13.7878L14.994 20H19.656L13.3171 10.7749H13.3174ZM11.4257 12.9738L10.8064 12.0881L5.87886 5.03974H8.00029L11.9769 10.728L12.5962 11.6137L17.7652 19.0075H15.6438L11.4257 12.9742V12.9738Z" />
-              </svg>
-            </Link> */}
+          <div className="items-center flex gap-x-6">
             <Link
               href="https://forms.gle/g6jsmGj2r2SCipwC6"
               rel="noopener noreferrer"
               target="_blank"
-              className="group"
+              className="group px-5 py-1 bg-rose-400 text-white text-sm font-semibold tracking-wider rounded-md flex items-center gap-1 hover:bg-rose-500"
               aria-label="Feedback"
             >
-              <div className="flex items-center justify-center gap-2 rounded-lg bg-rose-200 px-5">
-                <p>Feedback</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="h-5 w-5"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-                  />
-                </svg>
-              </div>
+              <p>Feedback</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="h-4 w-auto"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                />
+              </svg>
             </Link>
             <Link
               href="https://github.com/fercevik729/UCSC-Course-Planner"
@@ -75,5 +64,5 @@ export function Footer() {
         </div>
       </Container>
     </footer>
-  )
+  );
 }

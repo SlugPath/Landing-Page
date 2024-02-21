@@ -1,27 +1,27 @@
-'use client'
+"use client";
 
-import { Fragment } from 'react'
-import Link from 'next/link'
-import { Popover, Transition } from '@headlessui/react'
-import clsx from 'clsx'
+import { Fragment } from "react";
+import Link from "next/link";
+import { Popover, Transition } from "@headlessui/react";
+import clsx from "clsx";
 
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
-import { NavLink } from '@/components/NavLink'
+import { Button } from "@/components/Button";
+import { Container } from "@/components/Container";
+import { Logo } from "@/components/Logo";
+import { NavLink } from "@/components/NavLink";
 
 function MobileNavLink({
   href,
   children,
 }: {
-  href: string
-  children: React.ReactNode
+  href: string;
+  children: React.ReactNode;
 }) {
   return (
     <Popover.Button as={Link} href={href} className="block w-full p-2">
       {children}
     </Popover.Button>
-  )
+  );
 }
 
 function MobileNavIcon({ open }: { open: boolean }) {
@@ -36,19 +36,19 @@ function MobileNavIcon({ open }: { open: boolean }) {
       <path
         d="M0 1H14M0 7H14M0 13H14"
         className={clsx(
-          'origin-center transition',
-          open && 'scale-90 opacity-0',
+          "origin-center transition",
+          open && "scale-90 opacity-0",
         )}
       />
       <path
         d="M2 2L12 12M12 2L2 12"
         className={clsx(
-          'origin-center transition',
-          !open && 'scale-90 opacity-0',
+          "origin-center transition",
+          !open && "scale-90 opacity-0",
         )}
       />
     </svg>
-  )
+  );
 }
 
 function MobileNavigation() {
@@ -94,7 +94,7 @@ function MobileNavigation() {
         </Transition.Child>
       </Transition.Root>
     </Popover>
-  )
+  );
 }
 
 export function Header() {
@@ -108,14 +108,11 @@ export function Header() {
             </Link>
             <div className="hidden md:flex md:gap-x-6">
               <NavLink href="#features">Features</NavLink>
-              {/* <NavLink href="#testimonials">Testimonials</NavLink> */}
+              <NavLink href="#testimonials">Testimonials</NavLink>
               <NavLink href="#faq">FAQ</NavLink>
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
-            <div className="hidden md:block">
-              <NavLink href="http://localhost:3000">Sign in</NavLink>
-            </div>
             <Button href="http://localhost:3000" color="blue">
               <span>
                 Get started <span className="hidden lg:inline">today</span>
@@ -128,5 +125,5 @@ export function Header() {
         </nav>
       </Container>
     </header>
-  )
+  );
 }

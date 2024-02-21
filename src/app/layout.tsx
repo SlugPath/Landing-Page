@@ -1,40 +1,40 @@
-import { Inter, Lexend } from 'next/font/google'
-import clsx from 'clsx'
+import { Inter, Lexend } from "next/font/google";
+import clsx from "clsx";
 
-import '@/styles/tailwind.css'
-import { type Metadata } from 'next'
+import "@/styles/tailwind.css";
+import { type Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Slug Path',
-    default: 'SlugPath - UCSC Course Planning Made Simple',
+    template: "%s - Slug Path",
+    default: "SlugPath - UCSC Course Planning Made Simple",
   },
   description:
-    'Degree planning can be a pain. SlugPath makes it easy to plan your courses and graduate on time.',
-}
+    "Degree planning can be a pain. SlugPath makes it easy to plan your courses and graduate on time.",
+};
 
 const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-inter',
-})
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
 
 const lexend = Lexend({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-lexend',
-})
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-lexend",
+});
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html
       lang="en"
       className={clsx(
-        'h-full scroll-smooth bg-white antialiased',
+        "h-full scroll-smooth bg-white antialiased",
         inter.variable,
         lexend.variable,
       )}
@@ -42,5 +42,5 @@ export default function RootLayout({
       <link rel="icon" href="/favicon.svg" sizes="any" />
       <body className="flex h-full flex-col">{children}</body>
     </html>
-  )
+  );
 }

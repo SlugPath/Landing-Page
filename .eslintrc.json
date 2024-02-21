@@ -1,12 +1,6 @@
 {
-  "extends": [
-    "typescript",
-    "next/core-web-vitals",
-    "prettier"
-  ],
-  "ignorePatterns": [
-    "*.yml"
-  ],
+  "extends": ["typescript", "next/core-web-vitals", "prettier"],
+  "ignorePatterns": ["*.yml"],
   "rules": {
     "@typescript-eslint/no-explicit-any": "off"
   }
