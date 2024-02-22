@@ -1,7 +1,10 @@
+// Validate the environment variables
+await import("./src/env/client.mjs");
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: { unoptimized: true },
   output: "export",
 };
 
-module.exports = nextConfig;
+export default nextConfig;
