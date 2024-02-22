@@ -1,5 +1,6 @@
 "use client";
 
+import { env } from "@/env/client.mjs";
 import { Fragment } from "react";
 import Link from "next/link";
 import { Popover, Transition } from "@headlessui/react";
@@ -88,8 +89,6 @@ function MobileNavigation() {
             <MobileNavLink href="#features">Features</MobileNavLink>
             <MobileNavLink href="#testimonials">Testimonials</MobileNavLink>
             <MobileNavLink href="#pricing">Pricing</MobileNavLink>
-            <hr className="m-2 border-slate-300/40" />
-            <MobileNavLink href="/login">Sign in</MobileNavLink>
           </Popover.Panel>
         </Transition.Child>
       </Transition.Root>
@@ -113,7 +112,7 @@ export function Header() {
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
-            <Button href="http://localhost:3000" color="blue">
+            <Button href={env.NEXT_PUBLIC_WEBAPP_URL} color="blue">
               <span>
                 Get started <span className="hidden lg:inline">today</span>
               </span>

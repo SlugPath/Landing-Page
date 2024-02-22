@@ -8,6 +8,7 @@ import logoStatamic from "@/images/logos/statamic.svg";
 import logoStaticKit from "@/images/logos/statickit.svg";
 import logoTransistor from "@/images/logos/transistor.svg";
 import logoTuple from "@/images/logos/tuple.svg";
+import { env } from "@/env/client.mjs";
 
 export function Hero() {
   return (
@@ -31,7 +32,7 @@ export function Hero() {
         Undergraduate Degree planning can be a hassle. We make it easy.
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
-        <Button href="http://localhost:3000">Try it out now</Button>
+        <Button href={env.NEXT_PUBLIC_WEBAPP_URL}>Try it out now</Button>
         <Button
           href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           variant="outline"
