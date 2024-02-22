@@ -39,7 +39,7 @@ jobs:
     needs: [lint, format]
     runs-on: ubuntu-latest
     env:
-      NEXT_PUBLIC_FIREBASE_API_KEY: "https://www.testurl.com"
+      NEXT_PUBLIC_WEBAPP_URL: "https://www.testurl.com"
     steps:
       - uses: actions/checkout@v4
       - name: Setup Node.js
