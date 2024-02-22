@@ -1,35 +1,57 @@
-# Salient
+# Slug Path - Landing Page
 
-Salient is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+> A degree planner for UCSC students
+
+## About
+
+UCSC currently does not have an interactive and aesthetically pleasing degree
+planner that provides basic validation for academic plans. Our aim with this
+project is to meet that demand in the student body, starting with the CSE
+department.
+
+This repository is the landing page, which includes the basic features of the
+main SlugPath webapp.
 
 ## Getting started
 
-To get started with this template, first install the npm dependencies:
-
-```bash
-npm install
+```
+git clone git@github.com:SlugPath/Landing-Page.git
+pnpm install
 ```
 
-Next, run the development server:
+Make sure to create a `.env` file containing the necessary env variables (look at [.sample.env](./.sample.env) to see what variables need defining).
 
-```bash
-npm run dev
+Then, start the development server using the following command:
+
+```
+pnpm dev
 ```
 
-Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
+Et Voilà! The app should be running on `localhost:3001`.
 
-## Customizing
+## Contributing
 
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
+After downloading the project files and the dependencies make sure to install
+the necessary GitHooks for linting and formatting with
+
+```
+pnpm prepare
+```
+
+> To add your own Git Hooks beyond formatting or linting refer
+> [here](https://typicode.github.io/husky/).
+
+## Deployment
+
+We use Vercel to deploy as it is the most convenient way to deploy a Next.js
+application.
+
+## Built With
+
+- [Next.js](https://nextjs.org/) and [React](https://react.dev/)
+- [TailwindCSS](https://tailwindcss.com/) + [TailwindUI template Salient](https://tailwindui.com/templates/salient)
 
 ## License
 
-This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
-
-## Learn more
-
-To learn more about the technologies used in this site template, see the following resources:
-
-- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
-- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
-- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
+This project is licensed under the MIT License - see the
+[LICENSE](./LICENSE) file for details
