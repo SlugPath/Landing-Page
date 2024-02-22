@@ -6,7 +6,7 @@ export const env = createEnv({
     NEXT_PUBLIC_WEBAPP_URL: z.string().url(),
   },
   runtimeEnv: {
-    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
+    NEXT_PUBLIC_WEBAPP_URL: process.env.NEXT_PUBLIC_WEBAPP_URL,
   },
   emptyStringAsUndefined: true,
 });
