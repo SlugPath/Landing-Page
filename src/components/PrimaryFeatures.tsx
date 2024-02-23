@@ -80,7 +80,7 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to plan your courses.
+            Everything you need to plan your degree.
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
             We simplify the planning process by bringing all the elements into
