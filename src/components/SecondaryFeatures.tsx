@@ -6,9 +6,9 @@ import { Tab } from "@headlessui/react";
 import clsx from "clsx";
 
 import { Container } from "@/components/Container";
-import screenshotContacts from "@/images/screenshots/contacts.png";
-import screenshotInventory from "@/images/screenshots/inventory.png";
-import screenshotProfitLoss from "@/images/screenshots/profit-loss.png";
+import screenshotPdfExport from "@/images/screenshots/pdf-export.png";
+import screenshotGraduationProgress from "@/images/screenshots/graduation-progress.png";
+import screenshotMajorProgress from "@/images/screenshots/major-progress.png";
 
 interface Feature {
   name: React.ReactNode;
@@ -20,11 +20,11 @@ interface Feature {
 
 const features: Array<Feature> = [
   {
-    name: "Reporting",
-    summary: "Stay on top of things with always up-to-date reporting features.",
+    name: "Verification",
+    summary: "Verify your plan.",
     description:
-      "We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.",
-    image: screenshotProfitLoss,
+      "With our major progress system, we check that you have all your GEs, necessary credits and (for select majors) meet your major/minor requirements.",
+    image: screenshotMajorProgress,
     icon: function ReportingIcon() {
       const id = useId();
       return (
@@ -54,12 +54,12 @@ const features: Array<Feature> = [
     },
   },
   {
-    name: "Inventory",
+    name: "Graduation Progress",
     summary:
-      "Never lose track of what’s in stock with accurate inventory tracking.",
+      "Meet your graduation requirements and track your progress towards graduation.",
     description:
-      "We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure.",
-    image: screenshotInventory,
+      "See how many credits you have completed and how many you have left to complete your degree. We also track your GEs and major requirements.",
+    image: screenshotGraduationProgress,
     icon: function InventoryIcon() {
       return (
         <>
@@ -82,12 +82,11 @@ const features: Array<Feature> = [
     },
   },
   {
-    name: "Contacts",
-    summary:
-      "Organize all of your contacts, service providers, and invoices in one place.",
+    name: "Sharing",
+    summary: "Share your plan with your advisor, friends, or family members.",
     description:
-      "This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional.",
-    image: screenshotContacts,
+      "Export your plan to a PDF or share it in website with other users. You can also import plans from other students.",
+    image: screenshotPdfExport,
     icon: function ContactsIcon() {
       return (
         <>

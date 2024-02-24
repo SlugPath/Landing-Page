@@ -18,13 +18,13 @@ const features = [
     image: screenshotCurriculum,
   },
   {
-    title: "Degree progress",
+    title: "Degree builder",
     description:
-      "Understand your progress towards your degree. We'll let you know if you're on track.",
+      "Seamlessly search for courses and drag them around to build your perfect plan.",
     image: screenshotDashboard,
   },
   {
-    title: "Customizable",
+    title: "Customization",
     description:
       "Transfer student? Going abroad? No problem. Add your own custom courses.",
     image: screenshotCustomCourse,
@@ -83,8 +83,9 @@ export function PrimaryFeatures() {
             Everything you need to plan your degree.
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            We simplify the planning process by bringing all the elements into
-            one place.
+            We simplify the degree planning process by bringing course search,
+            catalog planners, GE checking, credit checking, and major
+            verification into one place.
           </p>
         </div>
         <Tab.Group
