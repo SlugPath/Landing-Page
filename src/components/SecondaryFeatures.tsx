@@ -23,7 +23,7 @@ const features: Array<Feature> = [
     name: "Verification",
     summary: "Verify your plan.",
     description:
-      "With our major progress system, we check that you have all your GEs, necessary credits and (for select majors) meet your major/minor requirements.",
+      "With our major progress system, we check that you have all your GEs, necessary credits and meet your major/minor requirements.",
     image: screenshotMajorProgress,
     icon: function ReportingIcon() {
       const id = useId();
