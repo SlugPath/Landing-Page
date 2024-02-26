@@ -20,11 +20,11 @@ interface Feature {
 
 const features: Array<Feature> = [
   {
-    name: "Verification",
-    summary: "Verify your plan.",
+    name: "Progression",
+    summary: "Track your progress towards graduation.",
     description:
-      "With our major progress system, we check that you have all your GEs, necessary credits and meet your major/minor requirements.",
-    image: screenshotMajorProgress,
+      "See how many credits you have completed and how many you have left to complete your degree. Understand your progress on GE and major requirements at a glance.",
+    image: screenshotGraduationProgress,
     icon: function ReportingIcon() {
       const id = useId();
       return (
@@ -54,12 +54,11 @@ const features: Array<Feature> = [
     },
   },
   {
-    name: "Graduation Progress",
-    summary:
-      "Meet your graduation requirements and track your progress towards graduation.",
+    name: "Verification",
+    summary: "Verify your plan.",
     description:
-      "See how many credits you have completed and how many you have left to complete your degree. We also track your GEs and major requirements.",
-    image: screenshotGraduationProgress,
+      "With our major progress system, we check that you have all your GEs, necessary credits and meet your major/minor requirements.",
+    image: screenshotMajorProgress,
     icon: function InventoryIcon() {
       return (
         <>
@@ -85,7 +84,7 @@ const features: Array<Feature> = [
     name: "Sharing",
     summary: "Share your plan with your advisor, friends, or family members.",
     description:
-      "Export your plan to a PDF or share it in website with other users. You can also import plans from other students.",
+      "Export your plan to a PDF or share it in website with other users. Seemlessly import plans from other students.",
     image: screenshotPdfExport,
     icon: function ContactsIcon() {
       return (

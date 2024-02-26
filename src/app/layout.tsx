@@ -7,7 +7,7 @@ import { type Metadata } from "next";
 export const metadata: Metadata = {
   title: {
     template: "%s - Slug Path",
-    default: "SlugPath - UCSC Course Planning Made Simple",
+    default: "SlugPath",
   },
   description:
     "Degree planning can be a pain. SlugPath makes it easy to plan your courses and graduate on time.",
