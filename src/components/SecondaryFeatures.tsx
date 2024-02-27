@@ -7,7 +7,7 @@ import clsx from "clsx";
 
 import { Container } from "@/components/Container";
 import screenshotPdfExport from "@/images/screenshots/pdf-export.png";
-import screenshotGraduationProgress from "@/images/screenshots/graduation-progress.png";
+import screenshotCustomCourse from "@/images/screenshots/custom-course.png";
 import screenshotMajorProgress from "@/images/screenshots/major-progress.png";
 
 interface Feature {
@@ -20,11 +20,11 @@ interface Feature {
 
 const features: Array<Feature> = [
   {
-    name: "Progression",
-    summary: "Track your progress towards graduation.",
+    name: "Customization",
+    summary: "Tailor your plan to your needs.",
     description:
-      "See how many credits you have completed and how many you have left to complete your degree. Understand your progress on GE and major requirements at a glance.",
-    image: screenshotGraduationProgress,
+      "Transfer student? Going abroad? No problem. Add your own custom courses into your degree plan.",
+    image: screenshotCustomCourse,
     icon: function ReportingIcon() {
       const id = useId();
       return (

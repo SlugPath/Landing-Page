@@ -2,57 +2,48 @@ import Image from "next/image";
 
 import { Container } from "@/components/Container";
 import backgroundImage from "@/images/background-faqs.jpg";
+import Link from "next/link";
 
 const faqs = [
   [
     {
-      question: "Does TaxPal handle VAT?",
+      question: "How many majors have Major Verification?",
       answer:
-        "Well no, but if you move your company offshore you can probably ignore it.",
+        "Unfortunately the process of adding verification data for each major is a manual process. Luckily we have built a crowdsourcing system where students can help contribute this valuable data and help more students verify their majors.",
     },
+
     {
-      question: "Can I pay for my subscription via purchase order?",
-      answer: "Absolutely, we are happy to take your money in all forms.",
-    },
-    {
-      question: "How do I apply for a job at TaxPal?",
+      question: "How accurate is Major Verification?",
       answer:
-        "We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.",
+        "Unfortunately given the complexities of Major Requirements for some majors, we cannot provide 100% accurate verification. The accuracy and issues are documented in the notes for the requirements for each major.",
     },
   ],
   [
     {
-      question: "What was that testimonial about tax fraud all about?",
-      answer:
-        "TaxPal is just a software application, ultimately your books are your responsibility.",
-    },
-    {
-      question:
-        "TaxPal sounds horrible but why do I still feel compelled to purchase?",
-      answer:
-        "This is the power of excellent visual design. You just can’t resist it, no matter how poorly it actually functions.",
-    },
-    {
-      question:
-        "I found other companies called TaxPal, are you sure you can use this name?",
-      answer:
-        "Honestly not sure at all. We haven’t actually incorporated or anything, we just thought it sounded cool and made this website.",
+      question: "How do I learn how to use SlugPath?",
+      answer: (
+        <>
+          We&apos;ve worked hard to ensure that SlugPath is as intuitive as
+          possible, but we recognize that it can be difficult to get used to a
+          new system. That why we&apos;ve created{" "}
+          <Link
+            target="_blank"
+            href=""
+            className="text-blue-400"
+            rel="noopener noreferrer"
+          >
+            this demo video
+          </Link>{" "}
+          demonstrating all of our features.
+        </>
+      ),
     },
   ],
   [
     {
-      question: "How do you generate reports?",
+      question: "Can I help make SlugPath better?",
       answer:
-        "You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.",
-    },
-    {
-      question: "Can we expect more inventory features?",
-      answer: "In life it’s really better to never expect anything at all.",
-    },
-    {
-      question: "I lost my password, how do I get into my account?",
-      answer:
-        "Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.",
+        "You can! We would love your feedback through our red Feedback button, or through your help collecting Major Requirement data for each major. If you are a UCSC staff member please reach out to us at insertemail@slugpath.com about becoming an administrator.",
     },
   ],
 ];

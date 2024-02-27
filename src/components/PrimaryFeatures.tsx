@@ -8,7 +8,7 @@ import clsx from "clsx";
 import { Container } from "@/components/Container";
 import backgroundImage from "@/images/background-features.jpg";
 import screenshotCurriculum from "@/images/screenshots/curriculum.png";
-import screenshotCustomCourse from "@/images/screenshots/custom-course.png";
+import screenshotProgressTracker from "@/images/screenshots/progress-tracker.png";
 import screenshotDashboard from "@/images/screenshots/dashboard.png";
 
 const features = [
@@ -24,11 +24,12 @@ const features = [
     image: screenshotDashboard,
   },
   {
-    title: "Customization",
+    title: "Progress Tracker",
     description:
-      "Transfer student? Going abroad? No problem. Add your own custom courses.",
-    image: screenshotCustomCourse,
+      "See how many credits you have completed and how many you have left to complete your degree. Understand your progress on GE and major requirements at a glance.",
+    image: screenshotProgressTracker,
   },
+
   // {
   //   title: 'Collaboration',
   //   description:
