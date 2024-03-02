@@ -7,14 +7,14 @@ import clsx from "clsx";
 
 import { Container } from "@/components/Container";
 import backgroundImage from "@/images/background-features.jpg";
-import screenshotCurriculum from "@/images/screenshots/curriculum.png";
-import screenshotProgressTracker from "@/images/screenshots/progress-tracker.png";
-import screenshotDashboard from "@/images/screenshots/dashboard.png";
+import screenshotCurriculum from "@/images/screenshots/curriculum.jpg";
+import screenshotProgressTracker from "@/images/screenshots/progress-tracker.jpg";
+import screenshotDashboard from "@/images/screenshots/dashboard.jpg";
 
 const features = [
   {
     title: "Curriculum charts",
-    description: "Build off of offical UCSC curriculum charts for your major.",
+    description: "Build on offical UCSC curriculum charts for your major.",
     image: screenshotCurriculum,
   },
   {
